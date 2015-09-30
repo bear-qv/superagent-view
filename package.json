@@ -1,0 +1,28 @@
+{
+  "name": "superagent-view",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "watchify -o public/js/bundle.js -v -d public/js/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "qv",
+  "license": "ISC",
+  "dependencies": {
+    "fbjs": "^0.2.1",
+    "flux": "^2.1.1",
+    "material-ui": "^0.12.0",
+    "normalize.css": "^3.0.3",
+    "react": "^0.13.3",
+    "react-dom": "^0.14.0-rc1",
+    "react-tap-event-plugin": "^0.1.8",
+    "reactify": "^1.1.1",
+    "watchify": "^3.4.0"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  }
+}
